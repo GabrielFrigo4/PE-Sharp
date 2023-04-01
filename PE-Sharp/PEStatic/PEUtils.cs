@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace PE_Sharp;
+namespace PE_Sharp.PEStatic;
 public static class PEUtils
 {
     // PE-Sharp Version

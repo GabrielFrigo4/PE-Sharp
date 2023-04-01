@@ -10,14 +10,14 @@
     <Authors>Gabriel Frigo</Authors>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <PackageIcon>PE32.png</PackageIcon>
+    <RepositoryUrl>https://github.com/GabrielFrigo4/PE-Sharp</RepositoryUrl>
+    <PackageTags>PE32 PE32+ C#</PackageTags>
+    <PackageProjectUrl>https://github.com/GabrielFrigo4/PE-Sharp</PackageProjectUrl>
+    <Description>It is a library that provides features that allow editing and analysis of the header of the PE32 and PE32+ formats</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="NovaPasta\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="..\..\..\..\..\..\OneDrive\Imagens\Saved Pictures\Image\PE32.png">
+    <None Update="PE32.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

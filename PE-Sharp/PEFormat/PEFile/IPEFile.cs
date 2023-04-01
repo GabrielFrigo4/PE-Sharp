@@ -1,4 +1,6 @@
-﻿namespace PE_Sharp.PEFormat.PEFile;
+﻿using PE_Sharp.PEStatic;
+
+namespace PE_Sharp.PEFormat.PEFile;
 unsafe public interface IPEFile: IDisposable
 {
     SectionHeader* FindSection(string name);

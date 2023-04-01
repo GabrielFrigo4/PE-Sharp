@@ -1,4 +1,5 @@
 ﻿using PE_Sharp.PEFormat.PEFile;
+using PE_Sharp.PEStatic;
 using System.Text;
 
 namespace PE_Sharp.PEFormat;

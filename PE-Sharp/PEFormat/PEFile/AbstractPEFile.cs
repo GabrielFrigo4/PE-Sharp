@@ -1,5 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 using System.Text;
+using PE_Sharp.PEStatic;
 
 namespace PE_Sharp.PEFormat.PEFile;
 unsafe public abstract class AbstractPEFile: IPEFile

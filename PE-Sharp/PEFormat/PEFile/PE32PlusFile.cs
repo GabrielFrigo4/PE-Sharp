@@ -1,4 +1,5 @@
 ﻿using System.Runtime.InteropServices;
+using PE_Sharp.PEStatic;
 
 namespace PE_Sharp.PEFormat.PEFile;
 unsafe public class PE32PlusFile: AbstractPEFile

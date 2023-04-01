@@ -1,5 +1,6 @@
 ﻿using PE_Sharp.Exceptions;
 using PE_Sharp.PEFormat.PEFile;
+using PE_Sharp.PEStatic;
 
 namespace PE_Sharp.PEFormat;
 /// <summary>

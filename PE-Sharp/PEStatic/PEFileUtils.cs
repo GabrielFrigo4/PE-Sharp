@@ -1,6 +1,8 @@
 ﻿using System.Runtime.InteropServices;
+using PE_Sharp.PEFormat;
+using PE_Sharp.PEFormat.PEFile;
 
-namespace PE_Sharp.PEFormat.PEFile;
+namespace PE_Sharp.PEStatic;
 unsafe public class PEFileUtils
 {
     public unsafe static IPEFile GetPEFile(string filename)
