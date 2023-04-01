@@ -8,6 +8,8 @@ unsafe public interface IPEFile: IDisposable
     string ReadString(uint rva);
     PESectionBuilder AddSection();
     void Write(string filename);
+    PE32File? GetPE32File();
+    PE32PlusFile? GetPE32PlusFile();
 
     DataDirectory* DataDirectories { get; }
     int DataDirectoryCount { get; }

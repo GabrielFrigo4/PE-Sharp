@@ -46,6 +46,14 @@ unsafe public class PE32File : AbstractPEFile
     public override IOptionalHeaderWindows WindowsHeader { get => *PtrWindowsHeader; }
 
     /// <summary>
+    /// Gets GetPE32File in IPEFile
+    /// </summary>
+    public override PE32File? GetPE32File()
+    {
+        return this;
+    }
+
+    /// <summary>
     /// Gets the optional standard header
     /// </summary>
     public OptionalHeaderStandard* PtrStandardHeader { get; private set; }

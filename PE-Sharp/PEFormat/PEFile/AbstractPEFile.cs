@@ -126,6 +126,17 @@ unsafe public abstract class AbstractPEFile: IPEFile
 
     public abstract PESectionBuilder AddSection();
     public abstract void Write(string filename);
+
+    public virtual PE32File? GetPE32File()
+    {
+        return null;
+    }
+
+    public virtual PE32PlusFile? GetPE32PlusFile()
+    {
+        return null;
+    }
+
     public PEFileType PEFileType { get; private protected set; }
     public abstract IOptionalHeaderStandard StandardHeader { get; }
     public abstract IOptionalHeaderWindows WindowsHeader { get; }
