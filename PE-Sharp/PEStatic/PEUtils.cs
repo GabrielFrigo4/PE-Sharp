@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
+using PE_Sharp.Exceptions;
 
 namespace PE_Sharp.PEStatic;
 public static class PEUtils
@@ -10,8 +11,7 @@ public static class PEUtils
     {
         Assembly assembly = Assembly.GetExecutingAssembly();
         Version? asmCloneVersion = (Version?)assembly.GetName().Version?.Clone();
-        Version cloneVersion = (Version)version.Clone();
-        return asmCloneVersion ?? cloneVersion;
+        return asmCloneVersion ?? throw new NullException("asmCloneVersion");
     }
 
     // Get Alignment
