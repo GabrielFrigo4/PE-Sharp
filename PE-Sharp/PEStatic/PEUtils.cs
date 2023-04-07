@@ -6,7 +6,6 @@ namespace PE_Sharp.PEStatic;
 public static class PEUtils
 {
     // PE-Sharp Version
-    private static readonly Version version = new(1, 0, 0, 0);
     public static Version GetVersion()
     {
         Assembly assembly = Assembly.GetExecutingAssembly();
